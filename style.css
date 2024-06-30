@@ -1,0 +1,259 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.nav{
+    display: flex;
+    align-items: centre;
+    width: 100%;
+    height: 35px;
+}
+.nav1{
+
+    width: 100%;
+    background-color: #E7E7E7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.blank1{
+    width: 250px;
+}
+
+.url{
+    color: #000000;
+    font-size: 12px ;
+    font-family: sans-serif;
+    font-weight: 520;
+}
+.url:hover{   
+     color: blue;
+}
+/* nav2 */
+.nav2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0px solid black;
+}
+.img{
+    background-image: url(logo-gniot.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 60px;
+    font-size: 0.5em;
+    margin-left:  0%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+.blank3{
+    width: 150px;
+}
+.apply{
+    color: #FFFFFF;
+    font: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    background-color: #d81c2a;
+    padding: 10px 15px;
+    border-radius: 7%;
+}
+.apply:hover{
+    color:  blue;
+}
+#link:hover{
+    color: blue;
+}
+.searchicon{
+    font-size: 22px;
+}
+/* sec1 */
+.sec1{
+    display:flex;
+    height: 665px;
+    /* margin-top: 20px;
+     */
+}
+.desk1{
+    width: 688px;
+    background-color: #f5f5f4;
+}
+    
+    
+
+
+.para1{
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 5px;
+    font-size: 50px ;
+    color: #000000;
+    font-family:sans-serif ;
+    font-weight:800;
+}
+.para1 p{
+    border-color: 10px yellow;
+}
+.para2 p{
+    font-size: 14px;
+    color: #4a4a4a;
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.contact{
+    color: #FFFFFF;
+    font: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    background-color: #1136a3;
+     padding: 10px 15px; 
+    border-radius: 5%;
+    width:100px;
+    margin-left: 50px;
+    margin-top: 25px;
+
+}
+.desk2{
+    background-color: #fdc226;
+    padding: 70px;
+    padding-left: 0%;
+}
+.board{
+    background-color: aqua;
+    width:100%;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.update{
+    background-color: #1136a3;
+    
+}
+.latest{
+    background-color: #d81c2a;
+    color: #FFFFFF;
+    width: 150px;
+    font: 14px;
+    font-family: sans-serif;
+    padding: 0px 0px 0px 15px;
+}
+.salary{
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+    
+}
+.salary p{
+    font-size: 40px;
+    
+}
+.rec{
+    background-color: #1136a3;
+    padding: 10px 22px;
+    color: #ffffff;
+}
+.lpa4{
+    background-color: #fdc226;
+    padding: 10px 20px;
+    
+}
+.lpa5{
+    background-color: #fdc226;
+    padding: 10px 20px;
+}
+#same{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#s1{
+    font-weight: 600;
+}
+/* sec2 */
+.sec2{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: #d81c2a;
+    margin-top: 25px;
+}
+.course{
+    width: 458px;
+}
+.btech{
+    width: 458px;
+    color: #FFFFFF;
+    background-color: #083e2d;
+}
+
+.btech h1{
+    font-size: 32px;
+    margin: 10px 5px 34px 16px;
+}
+    
+.btech p{
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 16px;
+    font-weight: 400;
+}
+.img1{
+    
+    margin-top: 0%;
+}
+.rs{
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    width: 200px;
+
+}
+.rsicon{
+    width: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.tim{
+    display: flex;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 20px;
+    width: 200px;
+}
+.timicon{
+    width: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.program h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    margin:20px;
+
+}
+.program p{
+    font-size: 38px;
+    color: #ffffff; 
+    margin: 20px;
+   
+}
+.program1{
+    margin: 20px;
+    color: #ffffff;
+}
+.pr-detail{display: flex;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 20px;
+    width: 200px;
+
+}

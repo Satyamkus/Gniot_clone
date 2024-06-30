@@ -1,0 +1,328 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .service {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .service-icon {
+            font-size: 48px;
+            color: #3498db;
+        }
+
+        .service-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .service-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="services-container">
+        <div class="service">
+            <div class="service-icon">🌍</div>
+            <div class="service-title">Community Outreach</div>
+            <div class="service-description">We engage with local communities to address their needs and promote sustainable development.</div>
+        </div>
+        <div class="service">
+            <div class="service-icon">🤝</div>
+            <div class="service-title">Volunteer Programs</div>
+            <div class="service-description">Join our volunteer programs and make a positive impact on the lives of those in need.</div>
+        </div>
+        <div class="service">
+            <div class="service-icon">💼</div>
+            <div class="service-title">Skill Development</div>
+            <div class="service-description">Empower individuals through skill development programs to enhance their livelihood opportunities.</div>
+        </div>
+        <div class="service">
+            <div class="service-icon">📚</div>
+            <div class="service-title">Education Initiatives</div>
+            <div class="service-description">Support our education programs to ensure access to quality education for underprivileged children.</div>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Login and Signup</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #2980b9;
+        }
+
+        .form-container {
+            padding: 20px;
+            transition: opacity 0.5s ease;
+        }
+
+        .form-container.hide {
+            opacity: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab" onclick="showForm('loginForm')">Login</div>
+            <div class="tab" onclick="showForm('signupForm')">Sign Up</div>
+        </div>
+
+        <div id="loginForm" class="form-container">
+            <form>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+
+        <div id="signupForm" class="form-container hide">
+            <form>
+                <label for="signupName">Full Name:</label>
+                <input type="text" id="signupName" required>
+
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+
+                <button type="button" onclick="signup()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showForm(formId) {
+            const loginForm = document.getElementById('loginForm');
+            const signupForm = document.getElementById('signupForm');
+
+            if (formId === 'loginForm') {
+                loginForm.classList.remove('hide');
+                signupForm.classList.add('hide');
+            } else if (formId === 'signupForm') {
+                loginForm.classList.add('hide');
+                signupForm.classList.remove('hide');
+            }
+        }
+
+        function login() {
+            // Add your login logic here
+            alert('Login functionality not implemented in this example.');
+        }
+
+        function signup() {
+            // Add your signup logic here
+            alert('Signup functionality not implemented in this example.');
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO for Zero Hunger - SDG 2</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .initiatives-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .call-to-action {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>NGO for Zero Hunger</h1>
+    </header>
+
+    <div class="hero-section">
+        <h2>Working Towards Sustainable Development Goal 2</h2>
+        <p>Join us in the fight against hunger and food insecurity.</p>
+    </div>
+
+    <div class="initiatives-container">
+        <h2>Our Initiatives</h2>
+        <p>We are committed to addressing the challenges of hunger and malnutrition. Our key initiatives include:</p>
+        <ul>
+            <li><strong>Free Food Distribution:</strong> Providing nutritious meals to those in need.</li>
+            <li><strong>Sustainable Agriculture:</strong> Supporting eco-friendly farming practices for food security.</li>
+            <li><strong>Community Collaboration:</strong> Working hand-in-hand with local communities to address hunger-related issues.</li>
+            <li><strong>Zero Hunger Advocacy:</strong> Advocating for policies and initiatives to achieve the global goal of zero hunger.</li>
+        </ul>
+    </div>
+
+    <div class="call-to-action">
+        <h2>Support Our Mission</h2>
+        <p>Your contribution can make a significant impact on our efforts. Together, let's build a world with zero hunger.</p>
+        <button onclick="location.href='#donate'">Donate Now</button>
+    </div>
+</body>
+
+</html>
